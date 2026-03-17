@@ -13,7 +13,7 @@ public class DemoApp {
 
     @GetMapping("/login")
     public String res2() {
-        return "login page";
+        return "<h1>login page</h1>";
     }
 
     @GetMapping("/register")
