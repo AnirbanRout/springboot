@@ -8,7 +8,22 @@ public class DemoApp {
 
     @GetMapping("/")
     public String response() {
-        return "reponse from the root file...";
+        return "home page...";
+    }
+
+    @GetMapping("/login")
+    public String res2() {
+        return "login page";
+    }
+
+    @GetMapping("/register")
+    public String res3() {
+        return "registration page...";
+    }
+
+    @GetMapping("/help")
+    public String res4() {
+        return "help page...";
     }
 
 }
