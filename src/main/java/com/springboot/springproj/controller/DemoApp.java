@@ -1,9 +1,10 @@
 package com.springboot.springproj.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+// import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class DemoApp {
 
     @GetMapping("/")
@@ -24,6 +25,11 @@ public class DemoApp {
     @GetMapping("/help")
     public String res4() {
         return "help page...";
+    }
+
+    @GetMapping("/chatgpt")
+    public String res5() {
+        return "redirect:https://www.youtube.com/";
     }
 
 }
