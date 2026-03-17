@@ -27,7 +27,7 @@ public class DemoApp {
         return "help page...";
     }
 
-    @GetMapping("/chatgpt")
+    @GetMapping("/youtube")
     public String res5() {
         return "redirect:https://www.youtube.com/";
     }
